@@ -33,6 +33,8 @@
   * ФП
   * Трейты
 
+!SLIDE
+
 * **PHP 6?**
 
 !SLIDE
@@ -169,8 +171,6 @@ public function translateArray($array, $fromLanguage = "en", $toLanguage = "ru",
 
 !SLIDE
 
-# Очень плохо
-
 @@@ php
 
 <?php
@@ -207,7 +207,7 @@ public function translateArray($array, $fromLanguage = "en", $toLanguage = "ru",
 	}
 }
 @@@
-
+** Красиво, но...**
 !SLIDE
 
 # #8 Управляй зависимостями
@@ -224,7 +224,7 @@ public function translateArray($array, $fromLanguage = "en", $toLanguage = "ru",
 
 ## Хватит это терпеть!
 
-<img src='images/998990.jpg' />
+<img src='images/998990.jpg' height="500px"/>
 
 !SLIDE
 
@@ -250,6 +250,8 @@ curl -s https://getcomposer.org/installer | php
     }
 }
 @@@
+
+!SLIDE
 
 Устанавливаем:
 
@@ -465,6 +467,8 @@ function test($a)
 	$stmt->execute();
 @@@
 
+!SLIDE
+
 ## Aura SQL
 ## Doctrine2 DBAL
 ## ZF Db
@@ -497,10 +501,6 @@ function test($a)
 
 *http://seleniumhq.org/*
 
-## Behat
-
-*http://behat.org/*
-
 !SLIDE
 
 # #18 Деплой
@@ -523,6 +523,12 @@ function test($a)
 
 # Спасибо!
 
-## http://8xx8.ru
-## @8xx8ru
-## avk@8xx8.ru
+## Андрей Кулаков
+
+**https://github.com/Andrew8xx8/right-way-presentation**
+
+**http://8xx8.ru**
+
+**@8xx8ru**
+
+**avk@8xx8.ru**
