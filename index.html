@@ -87,7 +87,15 @@
         <li>Трейты</li>
         </ul>
         </li>
-        <li><p><strong>PHP 6?</strong></p></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <ul>
+        <li><strong>PHP 6?</strong></li>
         </ul>
       </div>
       <div class='spacer bottom'></div>
@@ -230,10 +238,9 @@
     <section class='slide'>
   <div class='spacer top'></div>
   <div class='content'>
-    <h1>Очень плохо</h1>
-    
     <p><textarea class='code' display='none' mode='php'><?php&#x000A;/*&#x000A;    .___________..______           ___      .__   __.      _______. __      &#x000A;    |           ||   _  \         /   \     |  \ |  |     /       ||  |     &#x000A;    `---|  |----`|  |_)  |       /  ^  \    |   \|  |    |   (----`|  |     &#x000A;        |  |     |      /       /  /_\  \   |  . `  |     \   \    |  |     &#x000A;        |  |     |  |\  \----. /  _____  \  |  |\   | .----)   |   |  `----.&#x000A;        |__|     | _| `._____|/__/     \__\ |__| \__| |_______/    |_______|&#x000A;                                                                            &#x000A;                      ___   .___________. _______      _______.&#x000A;                     /   \  |           ||   ____|    /       |&#x000A;                    /  ^  \ `---|  |----`|  |__      |   (----`&#x000A;                   /  /_\  \    |  |     |   __|      \   \    &#x000A;                  /  _____  \   |  |     |  |____ .----)   |   &#x000A;                 /__/     \__\  |__|     |_______||_______/    &#x000A;                                                               &#x000A;             ___      .______      .______           ___   ____    ____ &#x000A;            /   \     |   _  \     |   _  \         /   \  \   \  /   / &#x000A;           /  ^  \    |  |_)  |    |  |_)  |       /  ^  \  \   \/   /  &#x000A;          /  /_\  \   |      /     |      /       /  /_\  \  \_    _/   &#x000A;         /  _____  \  |  |\  \----.|  |\  \----. /  _____  \   |  |     &#x000A;        /__/     \__\ | _| `._____|| _| `._____|/__/     \__\  |__|     &#x000A;*/&#x000A;public function translateArray($array, $fromLanguage = "en", $toLanguage = "ru", $translit = false) &#x000A;{&#x000A;	if (empty($this->_errors)) {&#x000A;		$text = implode("[<#>]", $array);&#x000A;		$response = $this->translateText($text, $fromLanguage, $toLanguage, $translit);&#x000A;		return $this->_explode($response);&#x000A;	} else {&#x000A;		return false;&#x000A;	}&#x000A;}</textarea>
-</p>
+
+    <strong> Красиво, но...</strong></p>
   </div>
   <div class='spacer bottom'></div>
 </section>
@@ -257,7 +264,7 @@
       <div class='content'>
         <h2>Хватит это терпеть!</h2>
         
-        <p><img src='images/998990.jpg' /></p>
+        <p><img src='images/998990.jpg' height="500px"/></p>
       </div>
       <div class='spacer bottom'></div>
     </section>
@@ -284,15 +291,20 @@
 
 <p><textarea class='code' display='none' mode='json'>{&#x000A;    "require": {&#x000A;        "monolog/monolog": "1.2.*"&#x000A;    }&#x000A;}</textarea>
 </p>
-
-<p>Устанавливаем:</p>
-
-<p><textarea class='code' display='none' mode='sh'>php composer.phar install</textarea>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p>Устанавливаем:</p>
+    
+    <p><textarea class='code' display='none' mode='sh'>php composer.phar install</textarea>
 </p>
-
-<p>Подключаем в проект:</p>
-
-<p><textarea class='code' display='none' mode='php'><?php&#x000A;require 'vendor/autoload.php';</textarea>
+    
+    <p>Подключаем в проект:</p>
+    
+    <p><textarea class='code' display='none' mode='php'><?php&#x000A;require 'vendor/autoload.php';</textarea>
 </p>
   </div>
   <div class='spacer bottom'></div>
@@ -389,15 +401,20 @@
     
     <p><textarea class='code' display='none' mode='php'><?php&#x000A;$pdo = new PDO('sqlite:users.db');&#x000A;$stmt = $pdo->prepare('SELECT name FROM users WHERE id = :id');&#x000A;$stmt->bindParam(':id', $_GET['id'], PDO::PARAM_INT); //<-- Automatically sanitized by PDO&#x000A;$stmt->execute();</textarea>
 </p>
-    
-    <h2>Aura SQL</h2>
-    
-    <h2>Doctrine2 DBAL</h2>
-    
-    <h2>ZF Db</h2>
   </div>
   <div class='spacer bottom'></div>
 </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Aura SQL</h2>
+        
+        <h2>Doctrine2 DBAL</h2>
+        
+        <h2>ZF Db</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
@@ -434,10 +451,6 @@
         <h2>Selenium</h2>
         
         <p><em>http://seleniumhq.org/</em></p>
-        
-        <h2>Behat</h2>
-        
-        <p><em>http://behat.org/</em></p>
       </div>
       <div class='spacer bottom'></div>
     </section>
@@ -466,18 +479,22 @@
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
-      <div class='spacer top'></div>
-      <div class='content'>
-        <h1>Спасибо!</h1>
-        
-        <h2>http://8xx8.ru</h2>
-        
-        <h2>@8xx8ru</h2>
-        
-        <h2>avk@8xx8.ru</h2>
-      </div>
-      <div class='spacer bottom'></div>
-    </section>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>Спасибо!</h1>
+
+<h2>Андрей Кулаков</h2>
+
+<p><strong>https://github.com/Andrew8xx8/right-way-presentation</strong></p>
+
+<p><strong>http://8xx8.ru</strong></p>
+
+<p><strong>@8xx8ru</strong></p>
+
+<p><strong>avk@8xx8.ru</strong></p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
     <!-- deck.js navigation extension -->
     <a class='deck-prev-link' href='#' title='Previous'>&#8592;</a>
     <a class='deck-next-link' href='#' title='Next'>&#8594;</a>
